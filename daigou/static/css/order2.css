@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+.o-address{
+    padding-top: 40px;
+    margin-bottom: 460px;
+}
+.o-address-title{
+    padding-top: 40px;
+    border-bottom: 1px solid #dedede;
+}
+.o-address-title h3{
+    font-size: 18px;
+    width:100px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-bottom: 2px solid #ed1957;
+}
+.o-address-list{
+    margin-top: 15px;
+    overflow: hidden;
+}
+.o-address-list p{
+    width:1190px;
+    float: left;
+    font-size: 14px;
+    padding-top: 22px;
+    padding-bottom: 18px;
+    background-color: #f5f5f5;
+}
+.ad-list-p{
+    margin-bottom: 2px;
+}
+.o-address-list span{
+    width: 28px;
+    font-size: 14px;
+    color:#1095fb;
+    padding-right: 20px;
+    float: right;
+}
+.o-address-list input{
+    margin-right: 14px;
+    margin-left: 23px;
+}
+.o-address-add{
+    margin-top: 40px;
+}
+.o-address-add p{
+    color:#ed1957;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.o-address-add input{
+    width: 260px;
+    height: 60px;
+    background-color: #ed1957;
+    border: 1px solid #ed1957;
+    border-radius: 3px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    margin-top: 160px;
+    float: right;
+}

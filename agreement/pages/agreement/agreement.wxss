@@ -1,0 +1,104 @@
+/*agreement.css*/
+.agreement-title{
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+.agreement-p-p1{
+  font-size: 10px;
+  text-indent: 2em;
+  line-height: 2;
+}
+.agreement-p-p2{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p1{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p1 span{
+  display: block;
+}
+.agreement-list-p1 li{
+  display: block;
+  text-indent: 2em;
+}
+.agreement-list-p2{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p2 span{
+  display: block;
+}
+.agreement-list-p2 li{
+  text-indent: 2em;
+  display: block;
+}
+.agreement-list-p3{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p3 li{
+  display: block;
+  text-indent: 2em;
+}
+.agreement-list-p3 span{
+  display: block;
+}
+.agreement-list-p4{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p4 li{
+  display: block;
+  text-indent: 2em;
+}
+.agreement-list-p4 span{
+  display: block;
+}
+.agreement-list-p5{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p5 li{
+  display: block;
+  text-indent: 2em;
+}
+.agreement-list-p5 span{
+  display: block;
+}
+.agreement-list-p6{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p6 li{
+  display: block;
+  text-indent: 2em;
+}
+.agreement-list-p6 span{
+  display: block;
+}
+.agreement-list-p7{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p7 li{
+  display: block;
+  text-indent: 2em;
+}
+.agreement-list-p7 span{
+  display: block;
+}
+.agreement-list-p8{
+  font-size: 10px;
+  line-height: 2;
+}
+.agreement-list-p8 li{
+  display: block;
+  text-indent: 2em;
+}
+.agreement-list-p8 span{
+  display: block;
+}

@@ -1,0 +1,124 @@
+.o-information{
+    margin-top: 40px;
+}
+.o-information-title{
+    padding-top: 40px;
+    border-bottom: 1px solid #dedede;
+}
+.o-information-title h3{
+    font-size: 18px;
+    width:100px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border-bottom: 2px solid #ed1957;
+}
+.o-information-table table{
+    border-collapse:collapse;
+}
+.o-information-table  tr:first-child td{
+    border:none;
+    text-align: center;
+}
+.o-information-table td{
+    border:1px solid #ccc; 
+    font-size: 14px;
+    color: #929292;
+    border: 1px solid #e6e6e6;
+    border-left:none;
+    border-right: none;
+}
+.o-information-table .td1{
+    width:420px;
+    height:60px;
+    margin-top:25px;
+    margin-bottom: 25px;
+    border:1px solid #f4f4f4;
+}
+.o-information-table .even .td1{
+    border:none;
+    border-top:1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
+}
+.o-information-table .even .td1{
+    width: 420px;
+    height: 60px;
+    border-left:1px solid #f4f4f4;
+}
+.o-information-table .even .td5{
+    border-right: 1px solid #f4f4f4;
+}
+.o-information-table .td2{
+    width:145px;
+    height:60px;
+   text-align: center;
+}
+.o-information-table .td3{
+    width:135px;
+    height:60px;
+    text-align: center;
+}
+.o-information-table .td4{
+    width:370px;
+    height:60px;
+    text-align: center;
+}
+.o-information-table .td5{
+    width:110px;
+    height:60px;
+    text-align: center;
+}
+.o-information-table .td1-address{
+    width:400px;
+    height: 32px;
+    margin:23px 12px 23px 20px;
+}
+.o-information-table .td2-type{
+    width:120px;
+    height: 32px;
+    margin:23px 12px 23px 12px;
+}
+.o-information-table .number-add,.number-reduce{
+    width:30px;
+    height: 36px;
+    background-color:#e9e9e9;
+    float: left;
+  
+}
+.o-information-table .number-add{
+    position: absolute;
+    top:375px;
+    left:763px;
+}
+.o-information-table .number-reduce{
+    position: absolute;
+    top:375px;
+    left:680px;
+}
+.o-information-table .td3-number{
+    width:50px;
+    height: 32px;
+    margin:23px 12px 23px 24px;
+}
+.o-information-table .td4-note{
+    width:280px;
+    height: 32px;
+    margin:23px 12px 23px 12px;
+}
+.o-information-table p{
+    color:#ed1957;
+    font-size: 14px;
+    margin-top: 40px;
+}
+.o-information-table .btn{
+    width: 260px;
+    height: 60px;
+    background-color: #ed1957;
+    border: 1px solid #ed1957;
+    border-radius: 3px;
+    font-size: 16px;
+    color:#fff;
+    text-align: center;
+    margin-top: 305px;
+    margin-left: 933px;
+    margin-bottom: 80px;
+}

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+}
+/*顶部  1*/
+.header{
+    height:40px;
+    background:#ed1957;
+    font-size: 14px;
+}
+.layout{
+    width:1190px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;;
+}
+.nav{
+    list-style: none;
+    width: 1190px;
+}
+.nav li{
+    float: left;
+    padding:15px 8px 13px 8px;
+}
+.nav-r{
+    margin-left:780px;
+}
+.nav li a{
+    color:#fff;
+}
+/*顶部  2*/
+.l-header{
+    height: 40px;
+    background: #ed1957;
+    font-size: 14px;;
+}
+.l-nav{
+    list-style: none;
+    width: 1190px;
+    position: absolute;
+}
+.l-nav li{
+    padding: 13px 8px;
+    font-size: 14px;
+    width: 56px;
+    line-height: 24px;
+}
+.l-nav-r{
+    margin-right: 25px;
+    float:right;
+    width: 56px;
+    position: relative;
+    top:-50px;
+}
+.l-nav li a{
+    color:#fff;
+    text-decoration: none;
+}
+/*底部*/
+
+.footer{
+    padding-bottom:310px;
+}
+.footer ul{
+    width: 418px;
+    margin-left:500px;
+   display: block;
+}
+.footer ul li{
+    list-style-type:none;
+    float: left;
+    padding:0px 8px 10px 8px;
+    font-size: 12px;
+    color: #666666;   
+}
+.footer ul li a{
+    text-decoration: none;
+    color:#666666;
+}
+.footer  p{
+    float: left;
+    margin-top:10px;
+    font-size: 12px;
+    margin-left: 545px;
+}
+
+/*进度步骤*/
+.stepBox {
+    display: block;
+    margin-top: 30px;
+    font-size: 0;
+    text-align: center;
+}
+.stepBox li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+    width: 73px;
+}
+
+.stepBox li.nextIcon {
+    margin-top: 36px;
+    position: relative;
+    height: 2px;
+    background: #000;
+}
+
+.stepBox li.nextIcon::after {
+    position: absolute;
+    top: -7px;
+    right: -9px;
+    display: block;
+    width: 0;
+    height: 0;
+    content: '';
+    border: 8px solid transparent;
+    border-left-color: #000;
+}
+
+.stepBox li img {
+    width: 100%;
+}
+
+.stepBox li p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
