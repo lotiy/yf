@@ -16,5 +16,21 @@
         </select></label></p>
         <p><button type="submit">Submit</button></p>
     </form>
+
+<script>
+//输入值后，用jQuery获取表单的JSON字符串，key和value分别对应每个输入的name和相应的value，例如：{"name":"Michael","email":...}
+var form=$('#test-form');
+var name=form.find('p input');
+var fil=name.filter=(function()
+    {
+        return this.innerHTML.indexOf('P','G','C')===0;
+    }
+);
+var arr=name.map=(function()
+    {
+        return this.innerHTMl;
+    })
+
+</script>
 </body>
 </html>
