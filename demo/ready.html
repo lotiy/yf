@@ -1,0 +1,43 @@
+<html>
+    <head>
+    <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    </head>
+<body>
+    <form id="testForm">
+            ...
+    </form>
+<script>
+//代码有误
+$('#testForm').on('submit',function()
+    {
+        alert('submit!');
+    }
+);//因为js在执行时，<form>没有载入浏览器，所以$('#testform)返回[],并没有绑定事件到任何DOM上
+//正确代码
+$(document).on('ready',function()
+    {
+        $('#testForm').on('submit',function()
+        {
+            alert('submit!');
+        });
+    });//把初始代码放在ready事件中，保证DOM已完成初始化
+//ready简化
+$(document).ready(function(){
+    $('#testForm').submit(function(){
+        alert('submit!');
+    });
+});
+//常用简化
+$(function(){
+
+});
+//事件参数
+$(function()
+{
+    $('#testMouseMoveDiv').mousemove(function (e){
+        $('#testMouseMoveSpan').text('pageX='+e.pageX+',pageY='+e.pageY);
+    });
+});
+</script>
+</body>
+</html>

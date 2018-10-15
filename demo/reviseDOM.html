@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    </head>
+<body>
+<div id="test-div">
+    <ul>
+        <li><span>Javascript</span></li>
+        <li><span>Python</span></li>
+        <li><span>Swift</span></li>
+    </ul>
+</div>
+<script>
+//如何向列表新增一个语言？
+//1、拿到<ul>节点
+var ul=$('test-div>ul');
+//2.调用append()传入HTML片段
+ul.append('<li><span>Haskell</span></li>');
+
+//创建DOM对象
+var ps=document.createElement('li');
+ps.innerHTML='<span>Pascal</span>';
+//添加DOM对象
+ul.append(ps);
+
+//添加JQuery对象
+ul.append($('#scheme'));
+//添加函数对象
+ul.append(function (index,html)
+    {
+        return '<li><span>Language-'+index+'</span></li>'
+    }
+    )
+//after方法
+var js=$('#test-div>ul>li:first-child');
+js.after('<li><span>Lua</span></li>');
+
+
+
+
+//删除节点
+var li=$('test-div>ul>li');
+li.remove();//所有的<li>全被删除
+</script>
+</body>
+</html>
