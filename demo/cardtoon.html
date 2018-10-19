@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    </head>
+<style>
+#test-animate{
+    width: 128px;
+    height: 128px;
+    background-color: red;
+    opacity: 1.0;
+}
+</style>
+<body>
+<div id="test-animate"></div>
+</body>
+
+<script>
+/*  var div=$('#test-animate');
+    div.animate({
+        opacity:0.25,
+        width:'256px',
+        height:'256px'
+    },3000);    //在3秒钟内css过渡到设定值*/
+//传入一个函数
+/*var div=$('#test-animate');
+div.animate({
+    opacity:0.25,
+    width:'256px',
+    height:'256px'
+},3000,function(){
+    console.log('动画已结束');
+    //恢复初始状态
+    $(this).css('opacity','1.0').css('width','128px').css('height','128px');
+});*/
+//串行动画
+var div=$('#test-animates');
+//动画效果：slideDown -暂停——放大——暂停——缩小
+div.sildeDown(2000)
+    .delay(1000)
+    .animate({
+        width:'256px',
+        height:'256px'
+    },2000)
+    .delay(1000)
+    .animate({
+        width:'120px',
+        height:'120px'
+    },2000);
+
+</script>
+</html>
