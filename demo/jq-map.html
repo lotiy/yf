@@ -1,0 +1,24 @@
+<html>
+    <head>
+            <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    </head>
+<body>
+<!-- HTML结构 -->
+    <ul class="lang">
+        <li class="js dy">JavaScript</li>
+        <li class="dy">Python</li>
+        <li id="swift">Swift</li>
+        <li class="dy">Scheme</li>
+        <li name="haskell">Haskell</li>
+    </ul>
+</body>
+<script>
+    var langs=$('ul.lang li');
+    var arr=langs.map(function(){
+        return this.innerHTML;
+    }).get();
+
+    console.log(langs);
+</script>
+
+</html>

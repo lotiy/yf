@@ -19,18 +19,22 @@
 
 <script>
 //输入值后，用jQuery获取表单的JSON字符串，key和value分别对应每个输入的name和相应的value，例如：{"name":"Michael","email":...}
-var form=$('#test-form');
-var name=form.find('p input');
-var fil=name.filter=(function()
-    {
-        return this.innerHTML.indexOf('P','G','C')===0;
+var obj={};
+//获取所有表单输入元素
+var input = $('#test-form :input');
+//过滤没有选中的单选框和按钮
+input = input.filter(function () {
+    if((this.type === "radio" && !this.checked) || this.tagName === 'BUTTON'){
+       return false;
     }
-);
-var arr=name.map=(function()
-    {
-        return this.innerHTMl;
-    })
-
+    return true;
+})
+//遍历将name作为对象的key，value作为value;
+input.map(function () {
+    obj[this.name] = this.value;
+});
+// 转换成json
+json = JSON.stringify(obj);
 </script>
 </body>
 </html>

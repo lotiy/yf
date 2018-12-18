@@ -1,13 +1,8 @@
 <html>
     <head>
     <script src="./static/libs/jquery-1.11.1.min.js"></script>
-    </head>
-<body>
-    <form id="testForm">
-            ...
-    </form>
 <script>
-//代码有误
+/*//代码有误
 $('#testForm').on('submit',function()
     {
         alert('submit!');
@@ -37,7 +32,21 @@ $(function()
     $('#testMouseMoveDiv').mousemove(function (e){
         $('#testMouseMoveSpan').text('pageX='+e.pageX+',pageY='+e.pageY);
     });
+});*/
+$(function () {
+    console.log('init A...');
+});
+$(function () {
+    console.log('init B...');
+});
+$(function () {
+    console.log('init C...');
 });
 </script>
+</head>
+<body>
+    <form id="testForm">
+            ...
+    </form>
 </body>
 </html>
