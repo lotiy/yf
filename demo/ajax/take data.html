@@ -18,36 +18,34 @@
 </body>
 <script src="../static/libs/jquery-1.11.1.min.js"></script>
 <script>
-    /*
-var local=$('.local-ul');
-$.ajax({
-        url:'https://xkt.7993.org/api/area/getAreasByName?name=&level=1',
-        async:'true',
-        type:'GET',
-        dataType:'json',
-        success: function(data){
-                     var d=''; 
-                     var datas=data.data;
-                    $.each(datas,function(i){
-                            d='<li class="local-Box"><p>城市：'+data.name+'</p><p>等级:'+data.level+'</p></li>';  
-                    })
-                    local.append(d);
-                    },
-});
-  */
-  var height = parseFloat(prompt('请输入身高(m):'));
-var weight = parseFloat(prompt('请输入体重(kg):'));
-  var BMI=weight/(height)*(height);
-if(BMI>32){
-  console.log('严重肥胖');
-}else if(28<BMI<32){
-  console.log('肥胖');
-}else if(25<BMI<28){
-  console.log('过重');
-}else if(18.5<BMI<25){
-  console.log('正常');
-}else{
- console.log('过轻');
-}
+ var local = $('.local-ul');
+        $.ajax({
+            url: 'https://xkt.7993.org/api/area/getAreasByName?name=&level=1',
+            async: 'true',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                var d = '';
+                var datas = data.data;
+                // 用forEach循环 效率一般，写法简单
+                //datas.forEach(element => {
+                  // d += '<li class="local-Box"><p>城市：' + element.name + '</p><p>等级:' + element.level +
+                   //'</p></li>';
+                // });
+                //用jq each 效率一般，写法简单
+                 //$.each(datas, function (i) {
+                //   d += '<li class="local-Box"><p>城市：' + datas[i].name + '</p><p>等级:' + datas[i].level +
+                       //  '</p></li>';
+               // });
+                //用for ,效率最高，写法麻烦
+                 for (var i = 0; i < datas.length; i++) {
+                    d += '<li class="local-Box"><p>城市：' + datas[i].name + '</p><p>等级:' + datas[i].level +
+                        '</p></li>';
+                 }
+                local.append(d);
+            },
+        });
+
 </script>
 </html>

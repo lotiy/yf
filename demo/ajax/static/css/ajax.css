@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+ul {
+    list-style-type: none;
+    width: 500px;
+    border: 1px solid #000;
+    border-bottom: none;
+    padding: 0;
+}
+
+li {
+    padding: 0 10px;
+    border-bottom: 1px solid #000;
+}
+
+.level1 {
+    font-size: 24px;
+    line-height: 2;
+    color: #000;
+}
+
+.level2 {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #9c8989;
+    padding-left: 15px;
+}
