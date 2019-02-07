@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatibe" content="IE=edge,chrome=1">
+</head>
+<script src="../static/libs/jquery-1.11.1.min.js"></script>
+<script>
+//最后一种循环是do { ... } while()循环，
+//它和while循环的唯一区别在于，不是在每次循环开始的时候判断条件，而是在每次循环完成的时候判断条件
+var n = 0;
+do {
+    n = n + 1;
+} while (n < 100);
+n; // 100
+//用do { ... } while()循环要小心，循环体会至少执行1次，而for和while循环则可能一次都不执行。
+</script>
+</html>

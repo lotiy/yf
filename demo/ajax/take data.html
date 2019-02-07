@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="renderer" content="webkit">
+        <meta http-equiv="X-UA-Compatibe" content="IE=edge",chrome=1>
+        <title>ajax提取数据</title>
+    </head>
+<body>
+    <div class="container">
+        <ul class="local-ul">
+            <li class="local-Box">
+                <p>城市</p>
+                <p>等级</p>
+            </li>
+        </ul>
+    </div>
+</body>
+<script src="../static/libs/jquery-1.11.1.min.js"></script>
+<script>
+ var local = $('.local-ul');
+        $.ajax({
+            url: 'https://xkt.7993.org/api/area/getAreasByName?name=&level=1',
+            async: 'true',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                console.log(data);
+                var d = '';
+                var datas = data.data;
+                // 用forEach循环 效率一般，写法简单
+                //datas.forEach(element => {
+                  // d += '<li class="local-Box"><p>城市：' + element.name + '</p><p>等级:' + element.level +
+                   //'</p></li>';
+                // });
+                //用jq each 效率一般，写法简单
+                 //$.each(datas, function (i) {
+                //   d += '<li class="local-Box"><p>城市：' + datas[i].name + '</p><p>等级:' + datas[i].level +
+                       //  '</p></li>';
+               // });
+                //用for ,效率最高，写法麻烦
+                 for (var i = 0; i < datas.length; i++) {
+                    d += '<li class="local-Box"><p>城市：' + datas[i].name + '</p><p>等级:' + datas[i].level +
+                        '</p></li>';
+                 }
+                local.append(d);
+            },
+        });
+
+</script>
+</html>

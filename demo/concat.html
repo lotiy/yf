@@ -1,0 +1,19 @@
+<html>
+    <head>
+            <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    </head>
+<script>
+    var arr=['a','b','c','d'];
+    var added=arr.concat([1,2,3]);
+    arr;
+    added;
+    console.log(arr);
+    console.log(added);
+    //concat并没有修改当前Array,而是返回了一个新的Array
+
+    //concat可接受任意个元素和Array,并且自动把Array拆开，然后全部添加到新的Array里
+    var arr=['a','b','c'];
+   var concat= arr.concat(1, 2, [3, 4]);
+   console.log(concat);
+</script>
+</html>

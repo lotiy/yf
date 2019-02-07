@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Copmatibe" content="IE=edge,chrome=1">
+</head>
+<script src="../static/libs/jquery-1.11.1.min.js"></script>
+<script>
+    //数组解构赋值
+//如何把一个数组的元素分别赋值给几个变量
+var arr=['Hello','JavaSctipt','Es6'];
+var x=arr[0];
+var y=arr[1];
+var z=arr[2];
+//在ES6中，可以使用解构赋值，直接对多个变量同时赋值：
+'use strict'
+var [x,y,z]=['hello','JavaScript','ES6'];
+console.log('x = ' + x + ', y = ' + y + ', z = ' + z);
+//对数组元素进行解构赋值时，多个变量要用[...]括起来!!!!!
+
+//如果数组本身还有嵌套，也可以通过下面的形式进行解构赋值，注意嵌套层次和位置要保持一致：
+ let[a,[b,c]=['hello',['javaScript','ES6']];
+console.log(a);
+console.log(b);
+console.log(c);
+
+    //对象解构赋值
+//对对象取出若干属性，也可以使用解构赋值
+'use strict'
+var person={
+    name: '小明',
+    age: 20,
+    gender: 'male',
+    passport: 'G-12345678',
+    school: 'No.4 middle school'
+};
+var{name,age,school}=person;
+console.log('name = ' + name + ', age = ' + age + ', passport = ' + passport);
+
+</script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatibe" content="IE=edge,chrome=1">
+</head>
+<script src="../static/libs/jquery-1.11.1.min.js"></script>
+<script>
+/*定义一个计算圆面积的函数area_of_circle()，它有两个参数：
+r: 表示圆的半径；
+pi: 表示π的值，如果不传，则默认3.14*/
+function area_of_circle(r,pi){
+    if(arguments.length<2){
+       return 3.14*r*r;
+    }
+    return pi*r*r;
+}
+area_of_circle(2);  
+area_of_circle(2,3.14);
+</script>
+</html>

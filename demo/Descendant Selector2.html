@@ -1,0 +1,34 @@
+<html>
+<head>
+    <script src="./static/libs/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <div class="test-selector">
+            <ul class="test-lang">
+                <li class="lang-javascript">JavaScript</li>
+                <li class="lang-python">Python</li>
+                <li class="lang-lua">Lua</li>
+            </ul>
+            <ol class="test-lang">
+                <li class="lang-swift">Swift</li>
+                <li class="lang-java">Java</li>
+                <li class="lang-c">C</li>
+            </ol>
+    </div>
+<script>
+// 分别选择所有语言，所有动态语言，所有静态语言，JavaScript，Lua，C等:
+var allLanguage=$('div.test-selector ul ol');
+console.log(allLanguage);
+var alldy=$('div.test-selector ul.test-lang');
+console,log(alldy);
+var allstatic=$('div.test-selector ol.test-lang');
+console.log('allstatic');
+var js=$('ul.test-lang li.lang-javascript');
+console.log(js);
+var Lua=$('ul.text-lang li.lang-lua');
+console,log('Lua');
+var C=$('ol.test-lang li.lang-c');
+</script> 
+</body>
+</html>
+ 

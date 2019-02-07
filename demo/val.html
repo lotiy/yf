@@ -1,0 +1,36 @@
+<html>
+    <head>
+    <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    </head>
+<body>
+    <input id="test-input" name="email" value="">
+    <select id="test-select" name="city">
+        <option value="BJ" selected>Beijing</option>
+        <option value="SH">Shanghai</option>
+        <option value="SZ">Shenzhen</option>
+    </select>
+    <textarea id="test-textarea">Hello</textarea>
+</body>
+<script>
+var input=$('#test-input');
+var select=$('#test-select');
+var textarea=$('test-textarea');
+
+var input1=input.val();     //'test'
+console.log(input1);
+var input2=input.val('abc@example.com');    //文本框的内容已变成abc@example.com
+console.log(input2);
+
+var select1=select.val();   //BJ
+console.log(select1);
+var select2=select.val('SH');   //选择框变成了SH
+console.log(select2);
+
+var textarea1=textarea.val();   //hello
+console.log(textarea1);
+var textarea2=textarea.val('Hi');   //文本框变成了'Hi'
+console.log(textarea2);
+
+   
+</script>
+</html>

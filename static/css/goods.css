@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0
+}
+.header{
+    height: 85px;
+    position: relative;
+}
+.header-Box{
+    width:1380px;
+    text-align: center;
+    background:#fff;
+}
+.header-left{
+    padding-left: 60px;
+    position: absolute;
+    left:60px;
+    top:0px;
+}
+.header-content{
+    padding-left: 343px;
+    position: absolute;
+    left:270px;
+    top:0px;
+}
+.header-right{
+    padding-right:60px;
+    position: absolute;
+    right:0px;
+    top:0px;
+}

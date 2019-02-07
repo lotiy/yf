@@ -1,0 +1,44 @@
+<html>
+    <head>
+            <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    <script>
+        var jqaj=$.get('https://xkt.7993.org/api/area/getAreasByName?name=&level=1',
+        {
+            data:[
+                {
+                   id:10001,
+                   pid:0,
+                   name:'浙江',
+                   level:1,
+                },
+                {
+                    id:10003,
+                    pid:0,
+                    name:'上海',
+                    level:1,
+                },
+                {
+                    id:10026,
+                    pid:0,
+                    name:'建德',
+                    level:1,
+                },
+                {
+                    id:10067,
+                    pid:0,
+                    name:'海南',
+                    level:1,
+                },
+                {
+                    id:10086,
+                    pid:0,
+                    name:'宁夏',
+                    level:1,
+                }
+            ],
+            errCode:0,
+            msg:'ok'
+        });
+    </script>
+    </head>
+</html>

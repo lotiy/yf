@@ -1,0 +1,17 @@
+<html>
+    <head>
+            <script src="./static/libs/jquery-1.11.1.min.js"></script>
+<script>
+    var input=$('#test-input');
+    input.val('change it!');
+    input.tigger('change');
+    // 无法弹出新窗口，将被浏览器屏蔽:
+$(function () {
+    window.open('/');
+});
+</script>
+</head>
+<body>
+    <input type="text" action=""  id="test-input" value="123">
+</body>
+</html>
