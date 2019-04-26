@@ -4,28 +4,130 @@
 }
 .header{
     height: 85px;
-    position: relative;
+    width:100%;
 }
 .header-Box{
-    width:1380px;
-    text-align: center;
-    background:#fff;
+    padding-top: 10px;
+    height: 85px;
+    margin-left: 60px;
+    margin-right:60px;
 }
 .header-left{
+    float: left;
     padding-left: 60px;
-    position: absolute;
-    left:60px;
-    top:0px;
 }
 .header-content{
-    padding-left: 343px;
-    position: absolute;
-    left:270px;
-    top:0px;
+    float: left;
+    padding-left: 200px;
 }
 .header-right{
     padding-right:60px;
+    float: right;
+}
+
+.container{
+    height: 307px;
+    margin-top: 4px;
+    width: 100%;
+}
+.container-Box{
+    height: 307px;
+    margin-left: 60px;
+    margin-right: 60px;
+} 
+.container-left{
+   float: left;
+   width: 253px;
+   height: 253px;
+} 
+.left-li{
+
+   list-style-type: none;
+}
+.left-li span{
+    font-size:16px;
+    font-weight: bold;
+    color:#fff;
+    display: block;   
+    margin-left: 39px;
+}
+.span-second{
+  margin-top: 3px;
+padding-bottom: 58px;
+padding-left:5px;
+}
+/*排名列表*/
+.container-list{
+    display: block;
+    margin-left: 285px;
+}
+.container-list  li{
+   background:url(../images/anchorList_bg.jpg) no-repeat center;
+   background-size: 1097px 80px;
+   margin-bottom: 7px;
+   list-style-type: none;
+   height: 78px;
+}
+.anchorList_userinfo{
+    margin: 7px 27px 7px 20px;
+    border-radius: 12px;
+}
+.list-content{
+    position: relative;
+    left:210px;
+    top:-72px;
+    width: 434px;
+    height: 46px;
+    border:3px solid #e5be91;
+    border-radius: 24px;
+    background: #fff;
+    z-index: 2;
+}
+.order_user{
+    font-size:16px;
+    font-weight: bold;
+   margin-left: 15px;
+   line-height: 45px;
+}
+.order_add{
+    line-height: 40px;
+    position: relative;
+    left:135px;
+    font-size:18px;
+    color:#ec426d;
+    font-weight: bolder;
+}
+.order_sum{
     position: absolute;
-    right:0px;
-    top:0px;
+   left:325px;
+   top:3px;
+    font-size:18px;
+    color:#ec5b29;
+    font-weight: bolder;
+    margin-left: 15px;
+    line-height: 40px;
+}
+/**排名次序*/
+.rankingNum{
+    background:url(../images/ranking_bg.png);
+    background-repeat: no-repeat;
+    display: block;
+    width:75px;
+    height: 51px;;
+    float: left;
+}
+.list_1 .rankingNum{
+    background-position: top;
+    position: relative;
+    top:13px;
+}
+.list_2 .rankingNum{
+    background-position: center;
+    position: relative;
+    top:13px;
+}
+.list_3 .rankingNum{
+    background-position: bottom;
+    position: relative;
+    top:13px;
 }

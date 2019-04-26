@@ -1,38 +1,75 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="renderer" content="webkit">
-        <meta http-equiv="X-UA-Compatibe" content="IE=1,chrome=1">
-        <link rel="stylesheet" href="./static/css/goods.css" type="text/css">
-    </head>
-    <body background="static/images/bg_v2.jpg"
-        style="background-repeat:no-repeat;
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatibe" content="IE=1,chrome=1">
+    <link rel="stylesheet" href="./static/css/goods.css" type="text/css">
+
+</head>
+
+<body background="static/images/bg_v2.jpg" style="background-repeat:no-repeat;
         background-position-x: center;
         background-position-y: center">
-       <div class="header">
-           <div class="header-Box">
-                <div class="header-left clearfix">
-                    <img src="./static/images/decorate_1.png">
-                </div>
-                <div class="header-content">
-                    <img src="./static/images/decorate_4.png">
-                </div>
-                <div class="header-right clearfix">
-                    <img src="./static/images/decorate_2.png">
-                </div>
-           </div>
-          
-       </div>
-       <!--<div class="container">
-           <div class="container-left">
-               <img src="./static/images/goods_dem.jpg">
-           </div>
-           <div class="container-right">
-               <img src="./static/images/anchorTime_bg.jpg">
-               <img src="./static/images/ranking_bg.png">
-               <img src="static/images/anchor_avatar_1.jpg">
-           </div>
-       </div>-->
-    </body>
+    <div class="header">
+        <div class="header-Box">
+            <img class="header-left" src="./static/images/decorate_1.png">
+            <img class="header-content" src="./static/images/decorate_4.png">
+            <img class="header-right" src="./static/images/decorate_2.png">
+        </div>
+    </div>
+    <div class="container">
+        <div class="container-Box">
+            <div class="container-left">
+                <li class="left-li"><img src="./static/images/goods_dem.jpg"></li>
+                <li class="left-li"><span class="span-first">Nike耐克官方NIKE</span>
+                    <span class="span-second">AIR FORCE MI LV8</span>
+                </li>
+            </div>
+            <div class="container-list">
+                <li class="list_1">
+                    <!-- 排名顺序-->
+                    <span class="rankingNum"></span>
+                    <!--头像-->
+                    <img class="anchorList_userinfo" src="./static/images/anchor_avatar_1.jpg">
+                    <!--进度条内容-->
+                    <div class="list-content">
+                        <span class="order_user">快手卖货王</span>
+                        <span class="order_add">+10订单</span>
+                        <span class="order_sum">1545151</span>
+                    </div>
+                </li>
+                <li class="list_2">
+                    <span class="rankingNum"></span>
+                    <img class="anchorList_userinfo" src="./static/images/anchor_avatar_2.jpg">
+                    <div class="list-content">
+                        <span class="order_user">一只小白兔</span>
+                        <span class="order_sum">1545151</span>
+                    </div>
+                </li>
+                <li class="list_3">
+                    <span class="rankingNum"></span>
+                    <img class="anchorList_userinfo" src="./static/images/anchor_avatar_3.jpg">
+                    <div class="list-content">
+                        <span class="order_user">avatar</span>
+                        <span class="order_sum">1545151</span>
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+    <!--conent end-->
+    <!--script start-->
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+<![endif]-->
+    <script src="./static/libs/jquery-1.11.1.min.js"></script>
+    <script src="./static/libs/jquery.xBox.min.js"></script>
+    <script src="./static/libs/jquery.md5.min.js"></script>
+    <script src="./static/js/good.js"></script>
+    <!--script end-->
+    <!--counter-->
+</body>
+
 </html>
